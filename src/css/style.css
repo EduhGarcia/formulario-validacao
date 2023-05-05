@@ -1,0 +1,87 @@
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    
+}
+
+.informacoes{
+    max-width: 620px;
+    color: #fff;
+}
+
+.informacoes .titulo{
+    font-size: 4.2rem;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.informacoes .texto{
+    font-size: 3.2rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 4rem;
+    background-color: #fff;
+    margin-left:200px;
+    max-height: 800px;
+    width: 720px;
+    font-size: 2rem;
+}
+
+.formulario .caixa-msg{
+    height: 75px;
+    font-size: 2.5rem;
+    padding: 0 18px;
+    border-radius: 10px;
+    border: solid 1px #000;
+}
+
+.formulario .caixa-msg::placeholder{
+    color: #A9A9A9;
+}
+
+.formulario .caixa-grande{
+    height: 300px;
+    font-size: 2.8rem;
+}
+
+.formulario .mensagem-campo-obrigatorio{
+    font-size: 2.5rem;
+    padding-bottom: 15px; 
+}
+
+.formulario .botao-enviar{
+    color: #fff;
+    background-color: #3CCC87;
+    border: none;
+    font-weight: 700;
+    height: 75px;
+    font-size: 2.5rem;
+    border-radius: 5px;
+}
+
+.formulario .campo-obrigatorio{
+    opacity: 0;
+    color: red;
+    font-size: 1.6rem;
+    padding-bottom: 15px;
+}
+
+.formulario .campo-obrigatorio.ativado{
+    opacity: 1;
+}
+
+.formulario .caixa-msg.caixa-escrita{
+    border: solid 2px #3CCC87;
+}
+
+.formulario .caixa-msg.vazia{
+    border: solid 2px red;
+}
+
