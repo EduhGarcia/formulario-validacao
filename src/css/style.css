@@ -1,0 +1,165 @@
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.informacoes{
+    max-width: 620px;
+    color: #fff;
+}
+
+.informacoes .titulo{
+    font-size: 4.2rem;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.informacoes .texto{
+    font-size: 3.2rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 4rem;
+    background-color: #fff;
+    margin-left:200px;
+    max-height: 800px;
+    width: 720px;
+    font-size: 2rem;
+}
+
+.formulario .caixa-msg{
+    height: 75px;
+    font-size: 2.5rem;
+    padding: 0 18px;
+    border-radius: 10px;
+    border: solid 1px #000;
+}
+
+.formulario .caixa-msg::placeholder{
+    color: #A9A9A9;
+}
+
+.formulario .caixa-grande{
+    height: 300px;
+    font-size: 2.8rem;
+}
+
+.formulario .mensagem-campo-obrigatorio{
+    font-size: 2.5rem;
+    padding-bottom: 15px; 
+}
+
+.formulario .botao-enviar{
+    color: #fff;
+    background-color: #3CCC87;
+    border: none;
+    font-weight: 700;
+    height: 75px;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario .campo-obrigatorio{
+    opacity: 0;
+    color: red;
+    font-size: 1.6rem;
+    padding-bottom: 15px;
+}
+
+.formulario .campo-obrigatorio.ativado{
+    opacity: 1;
+}
+
+.formulario .caixa-msg.caixa-escrita{
+    border: solid 2px #3CCC87;
+}
+
+.formulario .caixa-msg.vazia{
+    border: solid 2px red;
+}
+
+@media (max-width: 1400px) {
+    .formulario { 
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1150px) {
+    main { 
+        flex-direction: column;
+        padding: 0 50px 70px 50px;
+    }
+
+    .formulario {
+        margin-left: 0;
+    }
+
+    .informacoes {
+        margin: 80px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 815px) {
+    .formulario {
+        width: auto;
+    }
+    .formulario .caixa-msg{
+        height: auto;
+        padding: 6px 0 6px 6px;
+    }
+}
+
+@media (max-width: 630px) {
+    .informacoes{
+        margin: 50px 15px 50px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 0 10px 40px 10px;
+    }
+
+    .formulario .botao-enviar {
+        height: auto;
+        padding: 15px 0 15px 0;
+    }
+
+    .formulario .caixa-grande {
+        height: auto;
+    }
+
+    .formulario .caixa-msg {
+        font-size: 1.6rem;
+    }
+
+    .formulario .mensagem-campo-obrigatorio{
+        font-size: 1.6rem;
+        padding-bottom: 10px; 
+    }
+
+    .informacoes .titulo{
+        font-size: 3rem;
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+    
+    .informacoes .texto{
+        font-size: 2.5rem;
+    }
+
+    .formulario {
+        padding: 40px 30px;
+    }
+}
